@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.uts.edu.au/31284/wsd-diary/listings"
+ xmlns="http://www.uts.edu.au/31284/wsd-diary/listings"
+ elementFormDefault="qualified">
+    
+    <xs:element name="listings">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="listing" maxOccurs="unbounded" type="listingType">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="listingType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:integer"></xs:element>
+            <xs:element name="status" type="statusType"></xs:element>
+            <xs:element name="type" type="houseType"></xs:element>
+            <xs:element name="guests" type="xs:integer"></xs:element>
+            <xs:element name="listerUsername" type="xs:string"></xs:element>
+            <xs:element name="description" type="xs:string"></xs:element>
+            <xs:element name="location" type="locationType"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="statusType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="available|unavailable"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="houseType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Whole\shouse|Whole\sunit|Bedroom"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="locationType">
+        <xs:sequence>
+            <xs:element name="number" type="xs:integer"></xs:element>
+            <xs:element name="street" type="xs:string"></xs:element>
+            <xs:element name="suburb" type="xs:string"></xs:element>
+            <xs:element name="state" type="stateType"></xs:element>
+            <xs:element name="postcode" type="postcodeType"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="stateType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="ACT|NSW|NT|QLD|SA|TAS|VIC|WA"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="postcodeType">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

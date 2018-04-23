@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="users.xsl"?>
+<!--
+ xmlns="http://www.uts.edu.au/31284/wsd-diary"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.uts.edu.au/31284/wsd-diary listings.xsd"
+ -->
+<users xmlns="http://www.uts.edu.au/31284/wsd-diary"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.uts.edu.au/31284/wsd-diary users.xsd">
+    <user>
+        <username>Ryan117</username>
+        <email>ryan@ryanheise.com</email>
+        <name>Ryan Heise</name>
+        <password>blahblah</password>
+    </user>
+    <user>
+        <username>Ryan118</username>
+        <email>ryan@bloggs.com</email>
+        <name>Ryan Bloggs</name>
+        <password>foobar</password>
+    </user>
+</users>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.uts.edu.au/31284/wsd-diary/enquiries"
+ xmlns="http://www.uts.edu.au/31284/wsd-diary/enquiries"
+ elementFormDefault="qualified">
+    
+    <xs:element name="enquiries">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="enquiry" maxOccurs="unbounded" type="enquiryType">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:complexType name="enquiryType">
+        <xs:sequence>
+            <xs:element name="name" type="nameType"></xs:element>
+            <xs:element name="email" type="emailType"></xs:element>
+            <xs:element name="startDate" type="dateType"></xs:element>
+            <xs:element name="endDate" type="dateType"></xs:element>
+            <xs:element name="message" type="xs:string"></xs:element>
+            <xs:element name="listingId" type="xs:integer"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="nameType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{1}[a-z]+\s[A-Z]{1}[a-z]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z]|[a-z]|\.|_)+@([a-z]|-)+\.(([a-z]|-)+\.?){1,}[^\.]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="dateType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{1,2}/\d{1,2}/\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

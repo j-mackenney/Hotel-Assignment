@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="listings.xsl"?>
+<listings xmlns="http://www.uts.edu.au/31284/wsd-diary/listings"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.uts.edu.au/31284/wsd-diary/listings listings.xsd">
+    <listing>
+        <id>1</id>
+        <status>unavailable</status>
+        <type>Whole unit</type>
+        <guests>1</guests>
+        <listerUsername>Ryan117</listerUsername>
+        <description>Hey this is my house</description>
+        <location>
+            <number>82</number>
+            <street>Hey Street</street>
+            <suburb>Cooltown</suburb>
+            <state>NSW</state>
+            <postcode>2560</postcode>
+        </location>
+    </listing>
+    <listing>
+        <id>2</id>
+        <status>available</status>
+        <type>Whole unit</type>
+        <guests>4</guests>
+        <listerUsername>Ryan118</listerUsername>
+        <description>Hey this is my house</description>
+        <location>
+            <number>28</number>
+            <street>Crommelin Crescent</street>
+            <suburb>Saint Helens Park</suburb>
+            <state>NSW</state>
+            <postcode>2560</postcode>
+        </location>
+    </listing>
+     <listing>
+        <id>3</id>
+        <status>available</status>
+        <type>Whole unit</type>
+        <guests>1</guests>
+        <listerUsername>Ryan117</listerUsername>
+        <description>Hey this is my house</description>
+        <location>
+            <number>82</number>
+            <street>Hey Street</street>
+            <suburb>Cooltown</suburb>
+            <state>NSW</state>
+            <postcode>2560</postcode>
+        </location>
+    </listing>
+</listings>

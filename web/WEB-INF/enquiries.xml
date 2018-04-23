@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="enquiries.xsl"?>
+<enquiries xmlns="http://www.uts.edu.au/31284/wsd-diary/enquiries"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.uts.edu.au/31284/wsd-diary/enquiries enquiries.xsd">
+    <enquiry>
+        <name>Cool Beans</name>
+        <email>cool@hotmail.com</email>
+        <startDate>24/06/1987</startDate>
+        <endDate>25/06/1987</endDate>
+        <message>Hey Man</message>
+        <listingId>3</listingId>
+    </enquiry>
+</enquiries>

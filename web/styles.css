@@ -1,0 +1,234 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Geneva,Tahoma,Verdana,sans-serif;
+}
+p {
+    margin: 0;
+}
+
+textarea {
+    font-family: Geneva,Tahoma,Verdana,sans-serif; 
+    font-size: 14px !important;
+}
+#header {
+    background-color: #ffffff;
+    padding: 20px;
+}
+#header form {
+    display: inline;
+    float: right;
+    font-size: 12px;
+}
+#body {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+.searchInput input, .searchInput select {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+input, select, textarea {
+    padding: 5px;
+}
+
+.listing, .enquiry {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.listing.single {
+    margin-bottom: 0;
+}
+.houseplaceholder {
+    height: 100px;
+    width: 130px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.userplaceholder {
+    height: 130px;
+    width: 140px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.info {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    display: inline-block;
+}
+
+.formLabel {
+    width: 140px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formInput {
+    
+}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #ffffff;
+}
+.tabcontent.first {
+    display: block;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.inputError {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.listingFilter {
+    display: inline;
+}
+
+.buttons {
+    float: right;
+}
+
+.button {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button.green {
+    background-color: #5cb85c;
+}
+
+.greenStatus {
+    color: #5cb85c;
+}
+
+.redStatus{
+    color: #d9534f
+}
+
+.button.red {
+    background-color: #d9534f;
+}
+
+#userInfo {
+    margin-bottom: 20px;
+}
+
+.userListing {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#YourListings {
+    padding: 0;
+}
+
+#autocomplete {
+    width: 650px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 20px;
+}
+
+.danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 20px;
+}
+
+.infoAlert {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    padding: 20px;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.instruction {
+    margin-bottom: 20px;
+}
+
+#login, #signUp {
+    display: inline-block;
+}
+
+#login {
+    width: 45%;
+}
+
+#signUp {
+    vertical-align: top;
+    padding-left: 30px;
+    border-left: solid #f5f5f5;
+}
+
+#filter {
+    margin-top: 10px;
+}
